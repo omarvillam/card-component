@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# Whiteboard Excercise: Card Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a quick exercise where you will build out a small component and wire up data to it. There is no single correct way to do this, we are interested in observing your thought process. We encourage you to familiarize yourself with the contents of this repository. Feel free to ask as 
+many questions as you'd like.
 
-## Available Scripts
+**Time Limit:** 30 mins
 
-In the project directory, you can run:
+## Instructions
+* Review [this Figma](https://www.figma.com/file/MwKAhDyAwH8kcQiX7MFIwj/Course-Card?node-id=0%3A1).
+* Fork [this repository](https://github.com/synctree/card-component)
+* Clone the repo to your local machine
+* Build the Card component. 
+    * Utilizing TypeScript is a bonus
+    * You will be using the `contentful` [npm package](https://www.npmjs.com/package/contentful) to pull in the card data. Review the file `src/services/Contentful.ts`.
+    * The `content_type` you will be using is named `card`
+    * Pass the title, description, price, duration and image to the Card component as props from the `App` component into the `Card` component.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+------
+&copy; 2021 Synctree, Inc.
