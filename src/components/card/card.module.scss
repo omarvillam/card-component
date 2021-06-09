@@ -1,0 +1,66 @@
+.card {
+    width: 375px;
+    
+    &:not(:last-child) { // In case to have more than 1 card
+        margin-right: 25px;
+    }
+
+    .image {
+        width: 100%;
+        position: relative;
+
+        img {
+            height: 175px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            background-color: #E67E22;
+            position: absolute;
+            font-weight: bold;
+            color: white;
+            left: 32px;
+            top: 22px;
+            border-radius: 50px;
+            padding: 6px 18px 4px 18px;
+            font-size: 16px;
+            
+        }
+
+    }
+
+    .info {
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+
+       .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                font-size: 18px;
+            }
+
+            time {
+                color: rgba(51, 51, 51, 60%);
+                font-size: 14px;
+
+                span {
+                    margin-left: 4px;
+                }
+            }
+        }
+        
+        p {
+            color: rgba(51, 51, 51, 60%);
+            margin-top: 15px;
+            line-height: 24px;
+        }
+    }
+
+}

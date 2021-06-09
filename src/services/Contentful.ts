@@ -1,15 +1,14 @@
 import { createClient } from 'contentful';
+import { ICard, ICardFields } from './contentful-types';
 
-const accessToken = '';
-const space = '';
+const accessToken = 'SLwcKpqAlCqPldXRHpODgqIyFCrR7K9po4hrlwLiToQ';
+const space = 'xbkzr5hsezlf';
 
 const client = createClient({
   accessToken,
   space,
 });
 
-/*
-  TODO: Create a function that retrieves the list of cards from
-  the Contentful API using the client above. You will need an 
-  access token and space.
-*/
+export function getCards() {
+  return client.getEntries<ICardFields>();
+}
